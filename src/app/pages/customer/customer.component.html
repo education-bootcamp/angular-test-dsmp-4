@@ -1,0 +1,9 @@
+<p>customer works!</p>
+<input [(ngModel)]="text" type="text" placeholder="insert data here">
+<hr>
+<button routerLinkActive="active"
+        routerLink="/customer/list">Customer List</button> |
+<button routerLinkActive="active"
+        routerLink="/customer/new/{{text}}">New Customer</button> |
+<hr>
+<router-outlet/>
